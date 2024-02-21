@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem 0.5rem;
+    background-color: #F7DED0;
+}
+
+h4, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #363534;
+}
+
+.top-heading, .content-heading {
+    margin-bottom: 1rem;
+    color: #e7923d;
+    margin-top: 2rem;
+}
+
+.song-link {
+    padding: 0.375rem 0.25rem;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 1px solid #E2BFB3;
+    margin: 1rem 0;
+}
+
+pre {
+    padding: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 95vw;
+    color: #5e5b5a;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+a#up {
+    width: auto;
+    padding-inline: 1rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #E2BFB3;
+    z-index: 5;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.song-heading {
+    margin-top: 2rem;
+}
