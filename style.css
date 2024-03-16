@@ -1,3 +1,17 @@
+:root {
+    --dark-prim: #070F2B;
+    --dark-seco: #5766b8;
+    --dark-terc: #9290C3;
+    --dark-quar: #1B1A55;
+
+    --light-prim:#F7DED0;
+    --light-seco: #e7923d;
+    --light-terc: #5e5b5a;
+    --light-quar: #E2BFB3;
+    --light-pent: #383434;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +19,34 @@
 }
 
 body {
-    padding: 1rem 0.5rem;
-    background-color: #F7DED0;
+    padding: 1rem 1rem;
+    background-color: var(--light-prim);
+
+    --prim: var(--light-prim);
+    --seco: var(--light-seco);
+    --terc: var(--light-terc);
+    --quar: var(--light-quar);
+    --pent: var(--light-pent);
+}
+
+body.dark {
+    background-color: var(--dark-prim);
+
+    --prim: var(--dark-prim);
+    --seco: var(--dark-seco);
+    --terc: var(--dark-terc);
+    --quar: var(--dark-quar);
+    --pent: var(--dark-seco);
 }
 
 h4, h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #363534;
+    color: var(--pent);
 }
 
 .top-heading, .content-heading {
     margin-bottom: 1rem;
-    color: #e7923d;
+    color: var(--seco);
     margin-top: 2rem;
 }
 
@@ -32,7 +62,7 @@ a {
 hr {
     display: block;
     height: 2px;
-    border: 1px solid #E2BFB3;
+    border: 1px solid var(--quar);
     margin: 1rem 0;
 }
 
@@ -40,28 +70,52 @@ pre {
     padding: 1rem 0;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 95vw;
-    color: #5e5b5a;
+    color: var(--terc);
     overflow-x: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
 a#up {
-    width: auto;
+    width: 8.5rem;
     padding-inline: 1rem;
     height: 2.5rem;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    background-color: #E2BFB3;
+    background-color: var(--quar);
     z-index: 5;
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--pent);
+    font-size: 1rem;
 }
 
 .song-heading {
     margin-top: 2rem;
+}
+
+#mode-switch {
+    width: 8.5rem;
+    padding-inline: 1rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: var(--quar);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--pent);
+    border: none;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+#mode-switch:hover {
+    cursor: pointer;
 }
