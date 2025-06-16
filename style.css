@@ -1,15 +1,16 @@
-body { font-family: sans-serif; max-width: 800px; margin-inline:1rem; background-color: #344e41; color: #a3b18a ;}
+body { font-family: sans-serif; margin-inline:1rem; background-color: #344e41; color: #a3b18a; font-size: 2rem; padding-bottom: 2em;}
 a { text-decoration: none; color: #97c99c; }
 h2 { margin-top: 2em; }
 h3 { margin-top: 1.5em; }
 pre { white-space: pre-wrap; color: #dad7cd;}
-#search-container { display: flex; gap: 0.5em; margin-top: 1em; margin-bottom: 1.5rem;}
+#search-container { display: flex; gap: 0.5em; margin-top: 1em; margin-bottom: 1.5em;}
 #searchbar { flex: 1; padding: 0.5em; font-size: 1em; background-color: #588157; color: #dad7cd; border: solid 2px #3a5a40; border-radius: 10px;}
 #searchbar::placeholder {color: #dad7cdee;}
 #searchbar:focus-visible { outline: none}
 #jump-btn { border-radius: 10px; padding: 0.5em 1em; font-size: 1.2em; cursor: pointer; border: solid 2px #3a5a40 ; background-color: #588157; color: #dad7cd; outline: none;}
 .song-block { margin-bottom: 2em; }
-ul.song-index { padding-left: 1.75em; margin-top: 0; margin-bottom: 2.5rem; color: #dad7cd77;}
+ul.song-index { padding-left: 1.75em; margin-top: 0; margin-bottom: 2.5em; color: #dad7cd77;}
 ul.song-index li { margin: 0.25em 0; list-style: decimal;}
 mark { background: #a3b18a; }
-a#up {position: fixed;bottom: 1rem;right: 1rem;font-family: Arial, sans-serif;color: #97c99c;}
+a#up {position: fixed;bottom: 0;right: 0;font-family: Arial, sans-serif;color: #97c99c; background-color: #3a5a40; padding: 0.875em 1em; border-radius: 0.875em;}
+@media (max-width:64rem) { html body {font-size: 3rem;}}

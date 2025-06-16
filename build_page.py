@@ -124,6 +124,13 @@ function jumpToFirst() {
         window.firstMatch.scrollIntoView({ behavior: 'smooth' });
     }
 }
+                  
+function handleKeyDown(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        jumpToFirst();
+    }
+}
 </script>
 """)
         out.write("</head>\n<body>\n")
@@ -131,7 +138,7 @@ function jumpToFirst() {
         out.write("<h1>Zpěvník</h1>\n")
         out.write("""
 <div id="search-container">
-    <input type="text" id="searchbar" placeholder="Hledat" oninput="filterSongs()">
+    <input type="text" id="searchbar" placeholder="Hledat" oninput="filterSongs()" onkeydown="handleKeyDown(event)">
     <button id="jump-btn" onclick="jumpToFirst()">↓</button>
 </div>
 """)
